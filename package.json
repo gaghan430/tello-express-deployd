@@ -1,0 +1,25 @@
+{
+  "name": "mozzoo",
+  "version": "1.0.0",
+  "description": "Mozzoo Event Management System",
+  "main": "server.js",
+  "dependencies": {
+    "ayepromise": "^1.1.2",
+    "deployd": "^0.8.8",
+    "dpd-js-sdk": "^0.0.7",
+    "ect": "^0.5.9",
+    "express": "^4.13.4",
+    "fs": "^0.0.2",
+    "method-override": "^2.3.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "mongod --dbpath data --fork --logpath /dev/null",
+    "start": "node server.js",
+    "stop": "mongo admin --eval 'db.shutdownServer()' > /dev/null"
+  },
+  "author": "dodik gaghan",
+  "license": "ISC"
+}
