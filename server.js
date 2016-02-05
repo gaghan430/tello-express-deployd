@@ -2,7 +2,7 @@
  * @Author: Dodik Gaghan
  * @Date:   2016-02-04 16:05:33
  * @Last Modified by:   Dodik Gaghan
- * @Last Modified time: 2016-02-05 14:31:07
+ * @Last Modified time: 2016-02-05 16:07:39
  */
 
 'use strict';
@@ -27,9 +27,9 @@ app.set('view engine', 'html');
 app.engine('html', ectRenderer.render);
 app.set('views', config.root + '/app/views');
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-	extended: true
+	extended: false
 }));
 app.use(express.static(config.root + '/public'));
 app.use(methodOverride());
