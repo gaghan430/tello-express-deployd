@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "ayepromise": "^1.1.2",
+    "body-parser": "^1.14.2",
     "deployd": "^0.8.8",
     "dpd-js-sdk": "^0.0.7",
     "ect": "^0.5.9",
